@@ -1,0 +1,10 @@
+// var myname = "Rahul Sharma";
+// var myage = 21;
+// console.log("My name is ", myname);
+// console.log("My age is", myage);
+// console.log("My name is", "myname");
+var string1 = " konfinity ";
+var string2 = "is great!";
+console.log("Print",string1 + string2);
+console.log("Print","I study in" +  string1);
+console.log("Print","My experience " + string2);

@@ -1,0 +1,618 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+Test:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test
+  only:
+    refs:
+      - master
+
+Test01:
+  tags:
+    - fojs
+  script:
+    - node task01
+  only:
+    refs:
+      - 1-task01-program-to-print-hello-world
+
+Practice01:
+  tags:
+    - practice
+  script:
+    - node practice01
+  only:
+    refs:
+      - 1-task01-program-to-print-hello-world
+
+Test02:
+  tags:
+    - fojs
+  script:
+    - node task02
+  only:
+    refs:
+      - 2-task02-program-to-print-100
+
+Practice02:
+  tags:
+    - practice
+  script:
+    - node practice02
+  only:
+    refs:
+      - 2-task02-program-to-print-100
+
+Test03:
+  tags:
+    - fojs
+  script:
+    - node task03
+  only:
+    refs:
+      - 3-task03-program-to-print-100
+
+Practice03:
+  tags:
+    - practice
+  script:
+    - node practice03
+  only:
+    refs:
+      - 3-task03-program-to-print-100
+
+Test04:
+  tags:
+    - fojs
+  script:
+    - node task04
+  only:
+    refs:
+      - 4-task04-program-to-store-i-am-a-in-a-variable-and-programmer-in-another-variable
+
+Practice04:
+  tags:
+    - practice
+  script:
+    - node practice04
+  only:
+    refs:
+      - 4-task04-program-to-store-i-am-a-in-a-variable-and-programmer-in-another-variable
+
+Test05:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test05
+  only:
+    refs:
+      - 5-task05-program-to-store-18-in-a-variable-and-print-it-then-update-it-s-value-to-19
+
+Practice05:
+  tags:
+    - practice
+  script:
+    - node practice05
+  only:
+    refs:
+      - 5-task05-program-to-store-18-in-a-variable-and-print-it-then-update-it-s-value-to-19
+
+Test06:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test06
+  only:
+    refs:
+      - 6-task06-add-two-numbers-10-20-using-variable
+
+Practice06:
+  tags:
+    - practice
+  script:
+    - node practice06
+  only:
+    refs:
+      - 6-task06-add-two-numbers-10-20-using-variable
+
+Test07:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test07
+  only:
+    refs:
+      - 7-task07-calculate-product-of-2-and-10-using-variable
+
+Practice07:
+  tags:
+    - practice
+  script:
+    - node practice07
+  only:
+    refs:
+      - 7-task07-calculate-product-of-2-and-10-using-variable
+
+Test08:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test08
+  only:
+    refs:
+      - 8-task08-program-to-calculate-sum-of-200-and-300
+
+Practice08:
+  tags:
+    - practice
+  script:
+    - node practice08
+  only:
+    refs:
+      - 8-task08-program-to-calculate-sum-of-200-and-300
+
+Test09:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test09
+  only:
+    refs:
+      - 9-task09-program-to-find-the-percentage-of-marks
+
+Practice09:
+  tags:
+    - practice
+  script:
+    - node practice09.js
+  only:
+    refs:
+      - 9-task09-program-to-find-the-percentage-of-marks
+
+Test10:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test10
+  only:
+    refs:
+      - 10-task10-program-to-calculate-the-area-of-a-right-triangle
+
+Practice10:
+  tags:
+    - practice
+  script:
+    - node practice10.js
+  only:
+    refs:
+      - 10-task10-program-to-calculate-the-area-of-a-right-triangle
+
+Test11:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test11
+  only:
+    refs:
+      - 11-task11-program-to-convert-temperatures-from-celsius-to-fahrenheit
+
+Practice11:
+  tags:
+    - practice
+  script:
+    - node practice11.js
+  only:
+    refs:
+      - 11-task11-program-to-convert-temperatures-from-celsius-to-fahrenheit
+
+Test12:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test12
+  only:
+    refs:
+      - 12-task12-program-to-convert-given-value-in-indian-rupees-to-us-dollar
+
+Practice12:
+  tags:
+    - practice
+  script:
+    - node practice12.js
+  only:
+    refs:
+      - 12-task12-program-to-convert-given-value-in-indian-rupees-to-us-dollar
+
+Test13:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test13
+  only:
+    refs:
+      - 13-task13-program-to-calculate-leap-year
+
+Practice13:
+  tags:
+    - practice
+  script:
+    - node practice13.js
+  only:
+    refs:
+      - 13-task13-program-to-calculate-leap-year
+
+Test14:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test14
+  only:
+    refs:
+      - 14-task14-program-to-calculate-number-is-greater-than-or-less-than
+
+Practice14:
+  tags:
+    - practice
+  script:
+    - node practice14.js
+  only:
+    refs:
+      - 14-task14-program-to-calculate-number-is-greater-than-or-less-than
+
+Test15:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test15
+  only:
+    refs:
+      - 15-task15-program-to-compute-the-sum-of-the-two-given-integers
+
+Practice15:
+  tags:
+    - practice
+  script:
+    - node practice15.js
+  only:
+    refs:
+      - 15-task15-program-to-compute-the-sum-of-the-two-given-integers
+
+Test16:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test16
+  only:
+    refs:
+      - 16-task16-program-to-check-the-two-given-numbers
+
+Practice16:
+  tags:
+    - practice
+  script:
+    - node practice16.js
+  only:
+    refs:
+      - 16-task16-program-to-check-the-two-given-numbers
+
+Test17:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test17
+  only:
+    refs:
+      - 17-task17-program-to-check-given-number-lies-in-the-range
+
+Practice17:
+  tags:
+    - practice
+  script:
+    - node practice17.js
+  only:
+    refs:
+      - 17-task17-program-to-check-given-number-lies-in-the-range
+
+Test18:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test18
+  only:
+    refs:
+      - 18-task18-program-to-check-two-given-integers
+
+Practice18:
+  tags:
+    - practice
+  script:
+    - node practice18.js
+  only:
+    refs:
+      - 18-task18-program-to-check-two-given-integers
+
+Test19:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test19
+  only:
+    refs:
+      - 19-task19-program-returns-true-if-a-given-positive-number-is-a-multiple-of-3-or-a-multiple-of-7
+
+Practice19:
+  tags:
+    - practice
+  script:
+    - node practice19.js
+  only:
+    refs:
+      - 19-task19-program-returns-true-if-a-given-positive-number-is-a-multiple-of-3-or-a-multiple-of-7
+
+Test20:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test20
+  only:
+    refs:
+      - 20-task20-program-to-check-if-three-given-integer-values-are-in-the-range
+
+Practice20:
+  tags:
+    - practice
+  script:
+    - node practice20.js
+  only:
+    refs:
+      - 20-task20-program-to-check-if-three-given-integer-values-are-in-the-range
+
+Test21:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test21
+  only:
+    refs:
+      - 21-task21-program-to-find-the-largest-of-three-given-integers
+
+Practice21:
+  tags:
+    - practice
+  script:
+    - node practice21.js
+  only:
+    refs:
+      - 21-task21-program-to-find-the-largest-of-three-given-integers
+
+Test22:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test22
+  only:
+    refs:
+      - 22-task22-program-to-check-if-the-last-digit-of-the-three-given-positive-integers-is-the-same
+
+Practice22:
+  tags:
+    - practice
+  script:
+    - node practice22.js
+  only:
+    refs:
+      - 22-task22-program-to-check-if-the-last-digit-of-the-three-given-positive-integers-is-the-same
+
+Test23:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test23
+  only:
+    refs:
+      - 23-task23-program-to-compute-the-sum-of-the-two-integers
+
+Practice23:
+  tags:
+    - practice
+  script:
+    - node practice23.js
+  only:
+    refs:
+      - 23-task23-program-to-compute-the-sum-of-the-two-integers
+
+Test24:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test24
+  only:
+    refs:
+      - 24-task24-program-which-requires-directions
+
+Practice24:
+  tags:
+    - practice
+  script:
+    - node practice24.js
+  only:
+    refs:
+      - 24-task24-program-which-requires-directions
+
+Test25:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test25
+  only:
+    refs:
+      - 25-task25-program-to-create-a-basic-calculator-using-a-switch-and-break-statements
+
+Practice25:
+  tags:
+    - practice
+  script:
+    - node practice25.js
+  only:
+    refs:
+      - 25-task25-program-to-create-a-basic-calculator-using-a-switch-and-break-statements
+
+Test26:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test26
+  only:
+    refs:
+      - 26-task26-function-takes-2-integers-and-returns-true-if-either-one-of-the-integers-is-8-or-their
+
+Practice26:
+  tags:
+    - practice
+  script:
+    - node practice26.js
+  only:
+    refs:
+      - 26-task26-function-takes-2-integers-and-returns-true-if-either-one-of-the-integers-is-8-or-their
+
+Test27:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test27
+  only:
+    refs:
+      - 27-task27-program-check-if-the-three-numbers-are-the-same
+
+Practice27:
+  tags:
+    - practice
+  script:
+    - node practice27.js
+  only:
+    refs:
+      - 27-task27-program-check-if-the-three-numbers-are-the-same
+
+Test28:
+  tags:
+    - fojs
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/fundamentals-of-javascript-specs.git master
+    - npm install
+    - npm run test28
+  only:
+    refs:
+      - 28-task28-program-compare-the-area-of-the-right-triangle-and-area-of-the-square
+
+Practice28:
+  tags:
+    - practice
+  script:
+    - node practice28.js
+  only:
+    refs:
+      - 28-task28-program-compare-the-area-of-the-right-triangle-and-area-of-the-square
